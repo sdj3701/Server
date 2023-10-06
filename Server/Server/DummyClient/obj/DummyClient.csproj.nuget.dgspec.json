@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Server\\Server\\DummyClient\\DummyClient.csproj": {}
+    "D:\\workspace\\Server\\Server\\Server\\DummyClient\\DummyClient.csproj": {}
   },
   "projects": {
-    "C:\\Server\\Server\\DummyClient\\DummyClient.csproj": {
+    "D:\\workspace\\Server\\Server\\Server\\DummyClient\\DummyClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Server\\Server\\DummyClient\\DummyClient.csproj",
+        "projectUniqueName": "D:\\workspace\\Server\\Server\\Server\\DummyClient\\DummyClient.csproj",
         "projectName": "DummyClient",
-        "projectPath": "C:\\Server\\Server\\DummyClient\\DummyClient.csproj",
+        "projectPath": "D:\\workspace\\Server\\Server\\Server\\DummyClient\\DummyClient.csproj",
         "packagesPath": "C:\\Users\\newco\\.nuget\\packages\\",
-        "outputPath": "C:\\Server\\Server\\DummyClient\\obj\\",
+        "outputPath": "D:\\workspace\\Server\\Server\\Server\\DummyClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

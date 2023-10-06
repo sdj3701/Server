@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vmfCf8/RGRaZOHWm7xi6YemO95Dfesrk5ngfmwEwmejPuTsZ0qaLpcd2coHHZASThkCK2TRTZG/ji1mInWxkYg==",
+  "dgSpecHash": "QLgZpGC9rv1vS3q5oR2WCVVvPwko9q9dX51KQ1LiFoKR9z5WKOcXhJxB4hPDNV5d4iKnt7twxzXQBtJEAJ9xnQ==",
   "success": true,
-  "projectFilePath": "C:\\Server\\Server\\ServerCore\\ServerCore.csproj",
+  "projectFilePath": "D:\\workspace\\Server\\Server\\Server\\ServerCore\\ServerCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
