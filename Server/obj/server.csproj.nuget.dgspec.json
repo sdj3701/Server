@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\work\\Server\\Server\\server\\server.csproj": {}
+    "C:\\work\\Server\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\work\\Server\\Server\\server\\server.csproj": {
+    "C:\\work\\Server\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\work\\Server\\Server\\server\\server.csproj",
+        "projectUniqueName": "C:\\work\\Server\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "C:\\work\\Server\\Server\\server\\server.csproj",
+        "projectPath": "C:\\work\\Server\\server\\server.csproj",
         "packagesPath": "C:\\Users\\djthe\\.nuget\\packages\\",
-        "outputPath": "C:\\work\\Server\\Server\\server\\obj\\",
+        "outputPath": "C:\\work\\Server\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\djthe\\AppData\\Roaming\\NuGet\\NuGet.Config",
