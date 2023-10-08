@@ -18,6 +18,8 @@ Monitor.Exit(_obj); 는 문을 잠금을 풀어주는 행위
 1. try catch를 사용해서 그 안에 Monitor.Enter과 Moniter.Exit를 무조건 거치고 가게 하는 방법
 2. lock이라는 문법을 사용해서 예방 방법 lock이라는 문법안에 Moniter.Enter와 Moniter.Exit가 포함 되어있다.
 
+정리
+- 내가 만약 이 작업을 하면 다른애들은 동일한 작업을 하지 못하게 하고 내가 끝내야지만 다른 스레드가 와서 작업을 하게 하는 것이다.
 
 
 

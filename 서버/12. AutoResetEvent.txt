@@ -1,0 +1,70 @@
+AutoResetEvent 이벤트
+커널 레벨에 있는 직원이여서 더 느린 행동이다.
+장점으로는 기다리지 않고 알려주면 가면 되기 때문에 100프로 작업을 할 수 있다.
+
+AutoResetEvent _available = new AutoResetEvent(true); 로 선언을 하면 누구나 들어올 수 있는 상황 = 톨게이트 
+false로 하면 문이 닫힌 상태가 된 것이다.
+_available.WaitOne(); 입장 시도 //자동으로 false로 바꿔줌
+_available.Set(); 이벤트 상태를 시그널 상태로 바꾼다.
+
+단점
+커널 모드에서 작업을 하다 보니까 작업 속도가 많이느리다.
+
+ManualResetEvent 이벤트
+ManualResetEvent _available = new ManualResetEvent(true); 로 선언을 하면 누가 들어가 있으면 들어올 수 없는 상황 = 방문 같은 개념이다.
+_available.Reset(); 문을 닫아주는 함수
+
+단점
+_available.WaitOne();
+_available.Reset();
+이 둘을 사용해야 하기 때문에 값이 달라지는 현상이 생긴다.
+
+로딩이나 패킷을 받는 작업을 할 때 작업이 끝나면은 재 가동을 할 수 있는 코드를 만든다고 했을 경우 사용하면 좋다.
+ManualResetEvent _available = new ManualResetEvent(false); false로 바꾸어 입장을 하고  true로 바꾼 다음 작업이 끝나면 다시 false로 바꾼다.
+
+Mutex
+커널 영역에서 작업을 하는 것
+문을 잠그고 나서 문을 열어 주겠다 라는 애
+
+단점
+이친구는 느리다 커널 동기와 객체여서 그렇다.
+
+장점은
+이친구는  다양한 정보를 갖고 있다.
+카운트를 해서 몇번 잠그을 했어 몇번 풀어주면 잠금이 풀리는지 직관적으로 알 수 있다.
+ThreadID를 갖고 있어가지고 내가 나를 락을 한 애가 누군지를 기억하고 있다.
+그래서 느리다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

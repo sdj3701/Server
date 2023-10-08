@@ -4,87 +4,27 @@ using System.Threading.Tasks;
 
 namespace ServerCore
 {
-    class FastLock
-    {
-        int id;
-    }
-    class SessionManager
+    class Program
     {
         static object _lock = new object();
+        static SpinLock _lock2 = new SpinLock();
 
-        public static void TestSession()
+        static void Main(string[] args)
         {
             lock(_lock)
             {
 
             }
-        }
-        public static void Test()
-        {
-            lock (_lock)
-            {
-                UserManager.TestUser();
-            }
-        }
-    }
 
-    class UserManager
-    {
-        static object _lock = new object();
-
-        public static void Test()
-        {
-            lock(_lock )
-            {
-                SessionManager.TestSession();
-            }
-        }
-
-        public static void TestUser()
-        {
-            lock (_lock)
+            bool lockTaken = false;
+            try
             {
 
             }
-        }
-    }
 
+            _lock2.Enter(ref lockTaken);
 
-    class Program
-    {
-        static int number = 0;
-        static object _obj = new object();
-
-        static void Thread_1()
-        {
-            for (int i = 0; i < 100000; i++)
-            {
-                SessionManager.Test();    
-            }
-        }
-
-        static void Thread_2()
-        {
-            for (int i = 0; i < 100000; i++)
-            {
-                UserManager.Test();
-            }
-        }
-
-
-        static void Main(string[] args)
-        {
-            Task t1 = new Task(Thread_1);
-            Task t2 = new Task(Thread_2);
-            t1.Start();
-            Thread.Sleep(100);
-            t2.Start();
-
-            Task.WaitAll(t1, t2);
-
-            Console.WriteLine(number);
-
-
+            _lock2.Exit();
         }
     }
 }

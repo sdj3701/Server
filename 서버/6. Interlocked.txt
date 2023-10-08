@@ -18,7 +18,8 @@ Interlocked.Decrement(ref number);은 반대로 number를 원자적으로 -- 해
 이유는 그 사이에 다른 작업을 해서 값이 변경 될수도 있기 때문에 return값을 받는 변수를 만들어 실행하면 그 값을 확인해서 받을 수 있다.
 ex) int afterValue = Interlocked.Increment(ref number);를 하면 number의 값을 받아올 수 있다.
 
-
+정리 
+- 원자성으로 최소 단위로 만들어 동시에 일을 하게 하지않고 작업을 끝내야지 다른 작업을 할 수 있게 만든다.
 
 
 
